@@ -1,0 +1,104 @@
+{
+  "score": 89,
+  "submission_ready": false,
+  "blockers": [
+    "1 MISMATCH claim(s)",
+    "claims left unjudged"
+  ],
+  "grades": {
+    "SUPPORTED": 1,
+    "PARTIAL": 1,
+    "MISMATCH": 1,
+    "INSUFFICIENT_EVIDENCE": 1,
+    "NOT_JUDGED": 1
+  },
+  "red_alerts": [],
+  "amber_alerts": [],
+  "rows": [
+    {
+      "id": "C0001",
+      "sentence": "article Mindfulness and Workplace Stress: A Demo Survey Introduction Mindfulness training provably eliminates workplace stress in every population tested",
+      "refs": [
+        "smith2021"
+      ],
+      "dois": [
+        null
+      ],
+      "grade": "MISMATCH",
+      "justification": "Abstract reports 'reductions in perceived stress', which contradicts 'provably eliminates ... in every population'.",
+      "overclaim_flag": false,
+      "overclaim_terms": []
+    },
+    {
+      "id": "C0002",
+      "sentence": "Prior work linked meditation practice to lower cortisol levels in adults",
+      "refs": [
+        "goldin2013"
+      ],
+      "dois": [
+        "10.1016/j.psyneuen.2013.02.004"
+      ],
+      "grade": "PARTIAL",
+      "justification": "Abstract notes cortisol responses to stress but is a pilot on anticipatory stress, not the stated adult meditation claim.",
+      "overclaim_flag": false,
+      "overclaim_terms": []
+    },
+    {
+      "id": "C0003",
+      "sentence": "Sleep deprivation improves athletic reaction time",
+      "refs": [
+        "fakeKey2024"
+      ],
+      "dois": [
+        null
+      ],
+      "grade": "NOT_JUDGED",
+      "justification": "",
+      "overclaim_flag": false,
+      "overclaim_terms": []
+    },
+    {
+      "id": "C0004",
+      "sentence": "The openalex demo paper introduced a graph of scholarly citation intent",
+      "refs": [
+        "perkins2023"
+      ],
+      "dois": [
+        null
+      ],
+      "grade": "SUPPORTED",
+      "justification": "'we introduce MDCite... citation context dataset' matches 'introduced a graph of scholarly citation intent'.",
+      "overclaim_flag": false,
+      "overclaim_terms": []
+    },
+    {
+      "id": "C0005",
+      "sentence": "Methods We reused standard survey instruments",
+      "refs": [
+        "unusedkey2019"
+      ],
+      "dois": [
+        null
+      ],
+      "grade": "INSUFFICIENT_EVIDENCE",
+      "justification": "Abstract silent on survey instruments.",
+      "overclaim_flag": false,
+      "overclaim_terms": []
+    }
+  ],
+  "stats": {
+    "claims": 5,
+    "unique_keys_cited": 5,
+    "bib_entries": 5,
+    "orphans": [],
+    "ghosts": [],
+    "unresolved_identity": 0
+  },
+  "meta": {
+    "tool_version": "1.0.0",
+    "input": "examples/demo/paper.tex",
+    "bib": "examples/demo/refs.bib",
+    "parser": "latex",
+    "generated_at": "2026-09-27T11:15:19Z"
+  }
+}
